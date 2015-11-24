@@ -9,7 +9,7 @@ $query = $db->query("
 ");
 
 $messages = array();
-while ($msg = $query->fetch()){}
+while ($msg = $query->fetch()){
 	if (!empty($msg)) {
 		$messages[] = $msg;
 	}
